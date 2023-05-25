@@ -30,7 +30,7 @@ String rs232_prefix_str = "RS232";
 
 Adafruit_NeoPixel pixels(NUMPIXELS, LED_PIN, NEO_GRB + NEO_KHZ800);
 bool RS485mode = true;
-
+void RS485_Mode(int Mode);
 void TaskBlink( void *pvParameters );
 void Task_RS485( void *pvParameters );
 void Task_RS232( void *pvParameters );

@@ -19,6 +19,9 @@ bool RS485mode = true;
 
 Adafruit_NeoPixel pixels(NUMPIXELS, LED_PIN, NEO_GRB + NEO_KHZ800);
 void RS485_Mode(int Mode);
+void TaskBlink(void *pvParameters);
+void colorWipe(uint32_t color, int wait);
+void Task_RS485(void *pvParameters);
 
 void setup()
 {
